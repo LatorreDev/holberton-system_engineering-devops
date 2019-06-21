@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times
+
+word="Holberton School"
+goodChina="bad luck"
+badChina="good luck"
+counter=0
+
+while ((counter<10))
+do
+	((counter++))
+	if ((counter==4))
+	then
+		echo "$goodChina"
+	elif ((counter==8))
+	then
+		echo "$badChina"
+	else
+	       	echo "$word"
+	fi
+done
