@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# This script is displaying until numbers until 20 with superstitious
+
+word="Holberton School"
+badChina="bad luck from China"
+badJapan="bad luck from Japan"
+badItaly="bad luck from Italy"
+counter=0
+
+while ((counter<=20))
+do
+	echo "$counter"
+	case $counter in
+		4) echo "$badChina" 
+		;;
+		9) echo "$badJapan"
+		;;
+		17) echo "$badItaly"
+		;;
+	esac
+
+	((counter++))
+done
