@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script is displaying the files in the current directory
+
+counter=0
+LIST="$(ls)"
+
+for counter in $LIST
+do
+	echo "$counter" | cut -d "-" -f2
+done
