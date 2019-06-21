@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # This script is displaying until numbers until 20 with superstitious
 
-word="Holberton School"
 badChina="bad luck from China"
 badJapan="bad luck from Japan"
 badItaly="bad luck from Italy"
