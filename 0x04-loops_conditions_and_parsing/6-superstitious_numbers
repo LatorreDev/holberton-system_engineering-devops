@@ -4,7 +4,7 @@
 badChina="bad luck from China"
 badJapan="bad luck from Japan"
 badItaly="bad luck from Italy"
-counter=0
+counter=1
 
 while ((counter<=20))
 do
