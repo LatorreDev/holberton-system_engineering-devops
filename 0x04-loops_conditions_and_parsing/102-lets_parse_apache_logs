@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script is displaying the files in the current directory
+
+
+LOG="apache-access.log"
+echo "$(awk '{print $1 }' $LOG)"
+
