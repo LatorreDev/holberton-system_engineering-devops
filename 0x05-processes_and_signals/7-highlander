@@ -3,7 +3,7 @@
 
 i=1
 
-trap 'echo "I am invecible!!!"' 15
+trap 'echo "I am invincible!!!"' 15
 
 while ((i = 1))
 do
