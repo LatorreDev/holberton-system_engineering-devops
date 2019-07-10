@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #"Show my ip"
 /sbin/ifconfig eth0 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'
 /sbin/ifconfig lo | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'
