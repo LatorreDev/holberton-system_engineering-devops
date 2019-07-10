@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Change your ip
 mv /etc/hosts /etc/hosts.bk
 /etc/hosts
