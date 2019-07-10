@@ -1,0 +1,3 @@
+#!/bin/bash
+"TPC UDP listen sockets"
+sudo netstat -ltup 
