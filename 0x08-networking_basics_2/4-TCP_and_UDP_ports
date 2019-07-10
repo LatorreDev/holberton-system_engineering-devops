@@ -1,0 +1,3 @@
+#!/bin/bash
+"Listening sockets"
+netstat -ltup 
