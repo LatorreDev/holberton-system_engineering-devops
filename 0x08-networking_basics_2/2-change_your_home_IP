@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # Change your ip
-echo -e "127.0.0.2 localhost" > /etc/hosts
-echo -e "8.8.8.8 facebook.com" > /etc/hosts
+echo -e "127.0.0.2 localhost\n8.8.8.8 facebook.com" > /etc/hosts
