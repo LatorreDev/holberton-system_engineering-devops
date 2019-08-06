@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Script to install nginx server
 sudo apt update
 sudo apt -y install nginx
 sudo chown -R ubuntu /usr/share/nginx/html
