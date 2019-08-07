@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+# Script to install nginx server
+sudo apt -y install nginx
+sudo sed -i '0,/listen.*/s/listen.*/listen 80 default_server;/' /etc/nginx/sites-enabled/default
+echo "Holberton School" | sudo tee /var/www/html/index.html
+sed -i '/ 80 default_server;.*/a rewrite ^ 34.74.73.47/redirect_me permanent;' /etc/nginx/sites-available/default
+sudo systemctl restart nginx 
