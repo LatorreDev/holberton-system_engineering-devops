@@ -2,4 +2,5 @@
 # Verify Nginx
 sudo apt install curl -y
 sed -i '0,/listen.*/s/listen.*/listen 80 default_server;/' /etc/nginx/sites-enabled/default
+pkill nginx
 service nginx restart
