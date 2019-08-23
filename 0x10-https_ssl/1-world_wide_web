@@ -17,7 +17,7 @@ fi
 
 if [ "$#" -eq 2 ];
 then
-	my_bash_func $1 $2
+	my_bash_func "$1" "$2"
 else
-	my_bash_func $1
+	my_bash_func "$1"
 fi
