@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# dig awk function
 #shellcheck disable=SC2086
 
 my_bash_func()
@@ -13,8 +14,6 @@ dig $1 | grep -A1 'ANSWER SECTION' | awk -v subdom="web-01" 'NR==2{print "The su
 dig $1 | grep -A1 'ANSWER SECTION' | awk -v subdom="web-02" 'NR==2{print "The subdomain", subdom, "is a", $4, "record and points to", $5 }'
 fi
 }
-
-#my_bash_func $1 $2
 
 if [ "$#" -eq 2 ];
 then
