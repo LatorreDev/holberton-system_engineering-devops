@@ -1,6 +1,5 @@
-# Sed command
-file_line { 'Exec file':
-path  => '/var/www/html/wp-settings.php',
-line  => 'require_once( ABSPATH . WPINC . "/class-wp-locale.php" );',
-match => 'phpp'
+# fix it and then automate it using Puppet
+exec { 'fix error':
+  command => "sed -i 's/phpp/php/' /var/www/html/wp-settings.php",
+  path    => ['/bin']
 }
