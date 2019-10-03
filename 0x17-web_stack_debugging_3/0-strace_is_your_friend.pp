@@ -1,10 +1,6 @@
-#Replace wrong extension
-exec { 'fix wrong php extension':
-  command  => "sed -ie 's/phpp/php/' /var/www/html/wp-settings.php",
-  provider => shell,
-}
-->
-exec {'Restart Apache':
-  command => "service apache2 restart",
-  provider => shell,
+# Sed command
+file_line { 'Exec file':
+path  => '/var/www/html/wp-settings.php',
+line  => 'require_once( ABSPATH . WPINC . "/class-wp-locale.php" );',
+match => 'phpp'
 }
