@@ -1,6 +1,10 @@
-# Replace bad extension on wordpress config file
-file_line { 'Correc php extension':
-  path  => '/var/www/html/wp-settings.php',
-  line  => 'require_once( ABSPATH . WPINC . "/class-wp-locale.php" );',
-  match => 'phpp'
+#Replace wrong extension
+exec { 'fix wrong php extension':
+  command  => "sed -ie 's/phpp/php/' /var/www/html/wp-settings.php",
+  provider => shell,
+}
+->
+exec {'Restart Apache':
+  command => "service apache2 restart",
+  provider => shell,
 }
